@@ -7,7 +7,8 @@ export default function Login() {
  let navigate=useNavigate()
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/olduser", {
+    const response = await fetch("https://mernapp-1zor.onrender.com/api/olduser",//"http://localhost:5000/api/olduser", 
+    {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
