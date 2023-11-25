@@ -4,7 +4,7 @@ const port = 5000 || process.env.port
 const  mongoDB=require('./database');
 mongoDB();
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","https://go-foodie.netlify.app/");
+  res.setHeader("Access-Control-Allow-Origin","https://go-foodie.netlify.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-width, Content-Type, Accept"
